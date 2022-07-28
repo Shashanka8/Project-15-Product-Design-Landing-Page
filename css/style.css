@@ -153,6 +153,11 @@ nav .list-item img {
   background-color: var(--red);
 }
 
+.service-card.active img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
 .service-card.active h5 {
   color: #ffffff;
 }
