@@ -43,7 +43,6 @@ nav .list {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -52,14 +51,25 @@ nav .list-item {
   flex-direction: row;
   align-items: flex-start;
   list-style: none;
-  padding-right: 60px;
+  margin-right: 60px;
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+nav .list-item:last-child {
+  margin-right: 0;
 }
 
 nav .list-item img {
   padding-left: 5px;
   height: 16px;
+}
+
+.menu-icon {
+  display: none;
+  height: 32px;
+  cursor: pointer;
 }
 
 /* ----------- Navbar end ----------- */
@@ -356,3 +366,145 @@ footer {
 }
 
 /* ----------- Footer section end ----------- */
+
+/* ----------- Media Queries ----------- */
+@media screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 991px) {
+  nav {
+    padding: 2% 3% 0 3%;
+  }
+  nav .list-item {
+    margin-right: 40px;
+  }
+  .hero-section {
+    padding: 3% 3% 0 3%;
+  }
+  .hero-left img {
+    height: 400px;
+  }
+  .hero-right {
+    padding: 5% 0;
+  }
+  .hero-right h1 {
+    font-size: 52px;
+  }
+  .hero-right .hero-content {
+    width: 100%;
+  }
+  .services-section {
+    padding: 3%;
+    height: 700px;
+  }
+  .service-cards {
+    margin: 0;
+  }
+  .service-card {
+    padding: 10px 25px;
+  }
+  .statistics-section {
+    margin: 5% 3%;
+  }
+  .projects-section {
+    margin-top: 800px;
+    padding: 0 3%;
+  }
+  .contact-section {
+    margin: 2% 3%;
+  }
+  footer {
+    padding: 2% 3%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav .list {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .hero-left {
+    margin: 0 -50px;
+  }
+  .hero-right {
+    padding-bottom: 2%;
+  }
+  .services-section {
+    padding: 5% 3%;
+  }
+  .service-card {
+    padding: 10px;
+  }
+  .service-card img {
+    height: 50px;
+  }
+  .statistics-section .left-section {
+    padding: 30% 2%;
+  }
+  .statistics-section .left-section h1 {
+    font-size: 66px;
+  }
+  .project-card {
+    margin: 10px;
+  }
+  .project-card-header {
+    padding: 30px;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-left {
+    width: 100%;
+    margin: 2% auto;
+  }
+  .footer-right {
+    width: 30%;
+    margin-right: 30%;
+  }
+  .contact-left h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-icon,
+  nav .logo img {
+    height: 26px;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-left {
+    margin: 2% 0;
+  }
+  .hero-left img {
+    height: 330px;
+  }
+  .services-section {
+    position: relative;
+    background: #111111;
+  }
+  .service-cards {
+    flex-direction: column;
+  }
+  .service-card {
+    margin-bottom: 20px;
+  }
+  .statistics-section {
+    grid-template-columns: 1fr;
+  }
+  .statistics-section .left-section {
+    padding: 5% 2%;
+  }
+  .projects-section {
+    margin-top: 750px;
+  }
+  .projects-cards {
+    grid-template-columns: 1fr;
+  }
+  .footer-links {
+    margin: 10%;
+  }
+}

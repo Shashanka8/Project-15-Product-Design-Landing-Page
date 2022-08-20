@@ -1,5 +1,5 @@
 ![made-with-HTML](https://img.shields.io/badge/Made%20with-HTML%20&%20CSS-blue?style=for-the-badge)
-![Time taken](https://img.shields.io/badge/Time%20taken-03H%3A30M%3A00S-tomato?style=for-the-badge&logo=Clockify)
+![Time taken](https://img.shields.io/badge/Time%20taken-04H%3A30M%3A00S-tomato?style=for-the-badge&logo=Clockify)
 [![Demo](https://img.shields.io/badge/See%20Demo-Visit-green?style=for-the-badge&logo=web)](https://ssn-project15.netlify.app)
 
 # Product Design Landing Page
@@ -22,6 +22,7 @@
 - Wrote HTML code from scratch for this page.
 - Class, tag, combinator, pseudo-class selector for HTML elements.
 - Created cards for displaying contents in better formats.
+- Media queries to make responsive on all devices.
 
 ### Screenshot
 
@@ -29,7 +30,7 @@
 
 ## Device support
 
-This webpage is compatible with desktop screen only, and consistent improvements are being made.
+This webpage is compatible with desktop/tablet/mobile screens, and consistent improvements are being made.
 
 ## Author
 
